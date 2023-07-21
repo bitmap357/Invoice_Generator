@@ -3,6 +3,13 @@ from tkinter import *
 window = Tk()
 window.title("Invoice Generator")
 
+medicines = {
+    "Medicine A": 10,
+    "Medicine B": 20,
+    "Medicine C": 15,
+    "Medicine D": 25
+}
+
 medicine_label = Label(window, text="Medicine: ")
 medicine_label.pack()
 
