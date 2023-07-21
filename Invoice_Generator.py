@@ -23,6 +23,8 @@ def add_medicine():
 
 def update_invoice_text():
     invoice_text.delete(1.0, END)
+    for item in invoice_items:
+        invoice_text.insert(END, f"Medicine: {item[0]}, Quantity: {item[1]}, Total: {item[2]}\n")
 
 
 medicine_label = Label(window, text="Medicine: ")
