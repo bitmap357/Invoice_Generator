@@ -18,6 +18,11 @@ def add_medicine():
     price = medicines[selected_medicine]
     item_total = price * quantity
     invoice_items.append((selected_medicine, quantity, item_total))
+    update_invoice_text()
+
+
+def update_invoice_text():
+    invoice_text.delete(1.0, END)
 
 
 medicine_label = Label(window, text="Medicine: ")
