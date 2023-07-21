@@ -14,6 +14,8 @@ medicines = {
 def add_medicine():
     selected_medicine = medicine_listbox.get(ANCHOR)
     quantity = int(quantity_entry.get())
+    price = medicines[selected_medicine]
+    item_total = price * quantity
 
 
 medicine_label = Label(window, text="Medicine: ")
