@@ -20,4 +20,7 @@ add_button.pack()
 total_amount_label = Label(window, text="Total Amount")
 total_amount_label.pack()
 
+total_amount_entry = Entry(window)
+total_amount_entry.pack()
+
 window.mainloop()
