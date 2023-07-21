@@ -48,6 +48,9 @@ def generate_invoice():
 
     pdf.cell(0, 10, txt="", new_x="LMARGIN", new_y="NEXT")
 
+    for item in invoice_items:
+        medicine_name, quantity, item_total = item
+        pdf.cell(0, 10, txt=f"Medicine: {medicine_name}, Quantity: {quantity}, ")
 
 
 medicine_label = Label(window, text="Medicine: ")
