@@ -50,7 +50,10 @@ def generate_invoice():
 
     for item in invoice_items:
         medicine_name, quantity, item_total = item
-        pdf.cell(0, 10, txt=f"Medicine: {medicine_name}, Quantity: {quantity}, ")
+        pdf.cell(0, 10, txt=f"Medicine: {medicine_name}, Quantity: {quantity}, Total: {item_total}",
+                 new_x="LMARGIN", new_y="NEXT", align="L")
+
+
 
 
 medicine_label = Label(window, text="Medicine: ")
