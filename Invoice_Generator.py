@@ -10,6 +10,9 @@ medicines = {
     "Medicine D": 25
 }
 
+
+def add_medicine
+
 medicine_label = Label(window, text="Medicine: ")
 medicine_label.pack()
 
@@ -23,7 +26,7 @@ quantity_label.pack()
 quantity_entry = Entry(window)
 quantity_entry.pack()
 
-add_button = Button(window, text="Add Medicine")
+add_button = Button(window, text="Add Medicine", command=add_medicine)
 add_button.pack()
 
 total_amount_label = Label(window, text="Total Amount")
