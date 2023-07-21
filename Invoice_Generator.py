@@ -18,12 +18,15 @@ def add_medicine():
     price = medicines[selected_medicine]
     item_total = price * quantity
     invoice_items.append((selected_medicine, quantity, item_total))
+    total_amount_entry.insert(END, str(calculate_total())
     update_invoice_text()
 
 
 def calculate_total():
     total = 0.0
     for item in invoice_items:
+        total = total + item[2]
+    return total
 
 
 
