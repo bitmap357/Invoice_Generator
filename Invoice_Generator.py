@@ -2,3 +2,7 @@ from tkinter import *
 
 window = Tk()
 window.title("Invoice Generator")
+
+
+
+window.mainloop()
