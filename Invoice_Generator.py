@@ -11,7 +11,10 @@ medicines = {
 }
 
 
-def add_medicine
+def add_medicine():
+    selected_medicine = medicine_listbox.get(ANCHOR)
+    quantity = int(quantity_entry.get())
+
 
 medicine_label = Label(window, text="Medicine: ")
 medicine_label.pack()
