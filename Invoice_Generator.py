@@ -23,4 +23,7 @@ total_amount_label.pack()
 total_amount_entry = Entry(window)
 total_amount_entry.pack()
 
+customer_label = Label(window, text="Customer Name")
+customer_label.pack()
+
 window.mainloop()
