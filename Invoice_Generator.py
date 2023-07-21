@@ -14,4 +14,7 @@ quantity_label.pack()
 quantity_entry = Entry(window)
 quantity_entry.pack()
 
+add_button = Button(window, text="Add Medicine")
+add_button.pack()
+
 window.mainloop()
