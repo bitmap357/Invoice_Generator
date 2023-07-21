@@ -14,6 +14,8 @@ medicine_label = Label(window, text="Medicine: ")
 medicine_label.pack()
 
 medicine_listbox = Listbox(window, selectmode=SINGLE)
+for medicine in medicines:
+    medicine_listbox.insert(END, medicine)
 medicine_listbox.pack()
 
 quantity_label = Label(window, text="Quantity")
