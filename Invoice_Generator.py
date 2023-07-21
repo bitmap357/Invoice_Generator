@@ -29,4 +29,7 @@ customer_label.pack()
 customer_entry = Entry(window)
 customer_entry.pack()
 
+generate_button = Button(window, text="Generate Invoice")
+generate_button.pack()
+
 window.mainloop()
