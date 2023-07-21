@@ -44,6 +44,7 @@ def generate_invoice():
     pdf.add_page()
 
     pdf.cell(0, 10, text="Invoice", new_x="LMARGIN", new_y="NEXT", align="C")
+    pdf.cell(0, 10, text="Customer: "+customer_name, new_x="LMARGIN", new_y="NEXT", align="L")
 
 
 
