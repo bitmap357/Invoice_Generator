@@ -42,7 +42,7 @@ def generate_invoice():
 
     pdf = FPDF()
     pdf.add_page()
-
+    pdf.set_font("Helvetica", size=12)
     pdf.cell(0, 10, txt="Invoice", new_x="LMARGIN", new_y="NEXT", align="C")
     pdf.cell(0, 10, txt="Customer: "+customer_name, new_x="LMARGIN", new_y="NEXT", align="L")
 
