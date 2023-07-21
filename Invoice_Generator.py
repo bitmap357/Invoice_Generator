@@ -3,7 +3,7 @@ from tkinter import *
 window = Tk()
 window.title("Invoice Generator")
 
-medicine_lable = Label(window, text="Medicine: ")
-medicine_lable.pack()
+medicine_label = Label(window, text="Medicine: ")
+medicine_label.pack()
 
 window.mainloop()
