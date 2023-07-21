@@ -53,6 +53,8 @@ def generate_invoice():
         pdf.cell(0, 10, txt=f"Medicine: {medicine_name}, Quantity: {quantity}, Total: {item_total}",
                  new_x="LMARGIN", new_y="NEXT", align="L")
 
+    pdf.cell(0, 10, txt="Total Amount: " + str(calculate_total()), new_x="LMARGIN", new_y="NEXT", align="L")
+
 
 
 
