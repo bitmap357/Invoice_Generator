@@ -9,6 +9,7 @@ medicines = {
     "Medicine C": 15,
     "Medicine D": 25
 }
+invoice_items = []
 
 
 def add_medicine():
@@ -16,6 +17,7 @@ def add_medicine():
     quantity = int(quantity_entry.get())
     price = medicines[selected_medicine]
     item_total = price * quantity
+    invoice_items.append((selected_medicine, quantity, item_total))
 
 
 medicine_label = Label(window, text="Medicine: ")
