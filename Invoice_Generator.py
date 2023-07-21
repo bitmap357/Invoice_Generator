@@ -86,7 +86,7 @@ customer_label.pack()
 customer_entry = Entry(window)
 customer_entry.pack()
 
-generate_button = Button(window, text="Generate Invoice")
+generate_button = Button(window, text="Generate Invoice", command=generate_invoice)
 generate_button.pack()
 
 invoice_text = Text(window, height=10, width=50)
