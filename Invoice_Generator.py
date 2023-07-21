@@ -40,6 +40,9 @@ def update_invoice_text():
 def generate_invoice():
     customer_name = customer_entry.get()
 
+    pdf = FPDF()
+    pdf.add_page()
+
 
 medicine_label = Label(window, text="Medicine: ")
 medicine_label.pack()
