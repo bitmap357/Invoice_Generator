@@ -55,7 +55,7 @@ def generate_invoice():
 
     pdf.cell(0, 10, txt="Total Amount: " + str(calculate_total()), new_x="LMARGIN", new_y="NEXT", align="L")
 
-
+    pdf.output("invoice.pdf")
 
 
 medicine_label = Label(window, text="Medicine: ")
