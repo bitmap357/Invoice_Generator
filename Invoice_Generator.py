@@ -43,6 +43,9 @@ def generate_invoice():
     pdf = FPDF()
     pdf.add_page()
 
+    pdf.cell(0, 10, text="Invoice", new_x="LMARGIN", new_y="NEXT", align="C")
+
+
 
 medicine_label = Label(window, text="Medicine: ")
 medicine_label.pack()
