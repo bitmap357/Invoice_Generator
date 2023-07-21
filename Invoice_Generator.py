@@ -9,4 +9,7 @@ medicine_label.pack()
 medicine_listbox = Listbox(window, selectmode=SINGLE)
 medicine_listbox.pack()
 
+quantity_entry = Entry(window)
+quantity_entry.pack()
+
 window.mainloop()
