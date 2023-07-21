@@ -32,4 +32,7 @@ customer_entry.pack()
 generate_button = Button(window, text="Generate Invoice")
 generate_button.pack()
 
+invoice_text = Text(window, height=10, width=50)
+invoice_text.pack()
+
 window.mainloop()
