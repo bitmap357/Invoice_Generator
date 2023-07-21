@@ -1,4 +1,5 @@
 from tkinter import *
+from fpdf import FPDF
 
 window = Tk()
 window.title("Invoice Generator")
