@@ -43,8 +43,10 @@ def generate_invoice():
     pdf = FPDF()
     pdf.add_page()
 
-    pdf.cell(0, 10, text="Invoice", new_x="LMARGIN", new_y="NEXT", align="C")
-    pdf.cell(0, 10, text="Customer: "+customer_name, new_x="LMARGIN", new_y="NEXT", align="L")
+    pdf.cell(0, 10, txt="Invoice", new_x="LMARGIN", new_y="NEXT", align="C")
+    pdf.cell(0, 10, txt="Customer: "+customer_name, new_x="LMARGIN", new_y="NEXT", align="L")
+
+    pdf.cell(0, 10, txt="", new_x="LMARGIN", new_y="NEXT")
 
 
 
